@@ -1,0 +1,134 @@
+@import "../../styles/variables.scss";
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px 15px 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 95%;
+    background-color: $color-text;
+  }
+
+  h1 {
+    flex: 1;
+    font-size: 2vw;
+  }
+
+  button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: right;
+    margin-right: 0.5rem;
+    flex: 1;
+
+    li {
+      margin: 0 0.5rem;
+      list-style: none;
+
+      a {
+        color: $color-text;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        background-color: none;
+        cursor: pointer;
+
+        &:hover,
+        &:active {
+          color: $color-primary;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    flex: 1;
+    justify-content: center;
+
+    li {
+      margin-right: 1rem;
+
+      a {
+        color: $color-text;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        background-color: none;
+        cursor: pointer;
+
+        &:hover,
+        &:active {
+          color: $color-primary;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    h1 {
+      order: -2;
+      font-size: min(5vw, 20px);
+    }
+
+    button {
+      display: block;
+    }
+
+    .nav-links {
+      position: absolute;
+      top: 100%;
+      right: 0.5rem;
+      background-color: white;
+      display: none;
+      flex-direction: column;
+      padding: 1rem 0;
+
+      &.open {
+        display: flex;
+      }
+
+      li {
+        margin: 0;
+        margin-bottom: 1rem;
+
+        a {
+          color: $color-text;
+
+          &:hover,
+          &:active {
+            color: $color-primary;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .social-media {
+      order: -1;
+      display: flex;
+      justify-content: left;
+    }
+  }
+}
