@@ -31,17 +31,17 @@ const Navbar: React.FC<NavbarProps> = ({ title }) => {
       </ul>
       <ul className="social-media">
         <li>
-          <a href="https://github.com/adriana75">
+          <a href="https://github.com/adriana75" target="_blank">
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
         <li>
-          <a href="mailto:adrianaparedessalinas@gmail.com">
+          <a href="mailto:adrianaparedessalinas@gmail.com" target="_blank">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </li>
         <li>
-          <a href="https://wa.me/3186219938">
+          <a href="https://wa.me/3186219938" target="_blank">
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>
         </li>
