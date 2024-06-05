@@ -20,28 +20,28 @@ const Navbar: React.FC<NavbarProps> = ({ title }) => {
       </button>
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li>
-          <a href="/Resume">Resume</a>
+          <a href="/Resumen">Sobre Mí</a>
         </li>
         <li>
-          <a href="/Projects">Projects</a>
+          <a href="/Proyectos">Proyectos</a>
         </li>
         <li>
-          <a href="/Contact">Contact</a>
+          <a href="/Contacto">Contáctame</a>
         </li>
       </ul>
       <ul className="social-media">
         <li>
-          <a href="https://github.com">
+          <a href="https://github.com/adriana75">
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
         <li>
-          <a href="mailto:example@example.com">
+          <a href="mailto:adrianaparedessalinas@gmail.com">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </li>
         <li>
-          <a href="https://wa.me/1234567890">
+          <a href="https://wa.me/3186219938">
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>
         </li>
